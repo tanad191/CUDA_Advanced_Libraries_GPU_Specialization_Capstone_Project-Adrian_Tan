@@ -68,26 +68,26 @@ test_start:
 	@echo "Testing GPU runs on images in ./data/..."
 	@echo "Logs are stored in ./logs/"
 	mkdir -p ./output/
-	./imageFacialDetectionNPP -i test_image.pgm -o ./test_image_facialDetection.pgm > ./logs/test_image.log
+	./imageFacialDetectionNPP -i test_image.pgm -o ./test_image_detected.pgm > ./logs/test_image.log
 
 test_sample:
 	@echo "Testing GPU runs on images in ./data/..."
 	@echo "Logs are stored in ./logs/"
 	mkdir -p ./output/
-	./imageFacialDetectionNPP -i ./data/MyHeroAcademia.pgm -o ./output/MyHeroAcademia_facialDetection.pgm > ./logs/MyHeroAcademia.log
+	./imageFacialDetectionNPP -i ./data/MyHeroAcademia.pgm -o ./output/MyHeroAcademia_detected.pgm > ./logs/MyHeroAcademia.log
 
 test_gpu:
 	@echo "Testing GPU runs on images in ./data/..."
 	@echo "Logs are stored in ./logs/"
 	mkdir -p ./output/
-	./imageFacialDetectionNPP -i ./data/MyHeroAcademia.pgm -o ./output/MyHeroAcademia_facialDetection.pgm > ./logs/MyHeroAcademia.log
-	./imageFacialDetectionNPP -i ./data/SpyXFamily.pgm -o ./output/SpyXFamily_facialDetection.pgm > ./logs/SpyXFamily.log
-	./imageFacialDetectionNPP -i ./data/DemonSlayer.pgm -o ./output/DemonSlayer_facialDetection.pgm > ./logs/DemonSlayer.log
-	./imageFacialDetectionNPP -i ./data/DungeonMeshi.pgm -o ./output/DungeonMeshi_facialDetection.pgm > ./logs/DungeonMeshi.log
-	./imageFacialDetectionNPP -i ./data/Naruto.pgm -o ./output/Naruto_facialDetection.pgm > ./logs/Naruto.log
-	./imageFacialDetectionNPP -i ./data/Bleach.pgm -o ./output/Bleach_facialDetection.pgm > ./logs/Bleach.log
-	./imageFacialDetectionNPP -i ./data/FullmetalAlchemist.pgm -o ./output/FullmetalAlchemist_facialDetection.pgm > ./logs/FullmetalAlchemist.log
-	./imageFacialDetectionNPP -i ./data/Pokemon.pgm -o ./output/Pokemon_facialDetection.pgm > ./logs/Pokemon.log
+	./imageFacialDetectionNPP -i ./data/MyHeroAcademia.pgm -o ./output/MyHeroAcademia_detected.pgm > ./logs/MyHeroAcademia.log
+	./imageFacialDetectionNPP -i ./data/SpyXFamily.pgm -o ./output/SpyXFamily_detected.pgm > ./logs/SpyXFamily.log
+	./imageFacialDetectionNPP -i ./data/DemonSlayer.pgm -o ./output/DemonSlayer_detected.pgm > ./logs/DemonSlayer.log
+	./imageFacialDetectionNPP -i ./data/DungeonMeshi.pgm -o ./output/DungeonMeshi_detected.pgm > ./logs/DungeonMeshi.log
+	./imageFacialDetectionNPP -i ./data/Naruto.pgm -o ./output/Naruto_detected.pgm > ./logs/Naruto.log
+	./imageFacialDetectionNPP -i ./data/Bleach.pgm -o ./output/Bleach_detected.pgm > ./logs/Bleach.log
+	./imageFacialDetectionNPP -i ./data/FullmetalAlchemist.pgm -o ./output/FullmetalAlchemist_detected.pgm > ./logs/FullmetalAlchemist.log
+	./imageFacialDetectionNPP -i ./data/Pokemon.pgm -o ./output/Pokemon_detected.pgm > ./logs/Pokemon.log
 
 perf:
 	@echo "Parsing logs..."
