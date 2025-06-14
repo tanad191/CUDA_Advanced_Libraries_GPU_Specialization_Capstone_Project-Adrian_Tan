@@ -54,7 +54,7 @@ typedef struct
 	int flag;
 	int allocatedSize;	// track allocated buffer size
 }
-MyImage;
+ImageData;
 
 typedef struct 
 {
@@ -63,17 +63,17 @@ typedef struct
 	int* data;
 	int flag;
 }
-MyIntImage;
+ImageDimensions;
 
-int readPgm(char *fileName, MyImage* image);
-int writePgm(char *fileName, MyImage* image);
-int cpyPgm(MyImage *src, MyImage *dst);
-void createImage(int width, int height, MyImage *image);
-void createSumImage(int width, int height, MyIntImage *image);
-int freeImage(MyImage* image);
-int freeSumImage(MyIntImage* image);
-void setImage(int width, int height, MyImage *image);
-void setSumImage(int width, int height, MyIntImage *image);
+int readPgm(char *fileName, ImageData* image);
+int writePgm(char *fileName, ImageData* image);
+int copyPgmData(ImageData *src, ImageData *dst);
+void createImage(int width, int height, ImageData *image);
+void createSumImage(int width, int height, ImageDimensions *image);
+int freeImage(ImageData* image);
+int freeSumImage(ImageDimensions* image);
+void setImage(int width, int height, ImageData *image);
+void setSumImage(int width, int height, ImageDimensions *image);
 
 #ifdef __cplusplus
 }

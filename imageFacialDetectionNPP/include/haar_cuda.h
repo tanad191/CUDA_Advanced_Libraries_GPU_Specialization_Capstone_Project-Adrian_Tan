@@ -73,8 +73,8 @@ extern "C" {
         float scale;
         MySize orig_window_size;
         float inv_window_area;
-        MyIntImage sum;
-        MyIntImage sqsum;
+        ImageDimensions sum;
+        ImageDimensions sqsum;
         sqsumtype* pq0, * pq1, * pq2, * pq3;
         sumtype* p0, * p1, * p2, * p3;
 
@@ -93,7 +93,7 @@ extern "C" {
     /* C-Compatible Function Declarations */
 
     /* Sets images for Haar classifier cascade */
-    void setImageForCascadeClassifier(myCascade* cascade, MyIntImage* sum, MyIntImage* sqsum);
+    void setImageForCascadeClassifier(myCascade* cascade, ImageDimensions* sum, ImageDimensions* sqsum);
 
     /* Runs the cascade on the specified window */
     int runCascadeClassifier(myCascade* cascade, MyPoint pt, int start_stage);
@@ -105,7 +105,7 @@ extern "C" {
     void releaseTextClassifier(myCascade* cascade);
 
     /* Computes integral images (and squared integral images) from a source image */
-    void integralImages(MyImage* src, MyIntImage* sum, MyIntImage* sqsum);
+    void integralImages(ImageData* src, ImageDimensions* sum, ImageDimensions* sqsum);
 
 #ifdef __cplusplus
 } // End of extern "C"
@@ -114,7 +114,7 @@ extern "C" {
 #ifdef __cplusplus
 /* C++-Only Function Declarations (using std::vector) */
 
-std::vector<MyRect> detectObjects(MyImage* image, MySize minSize, MySize maxSize,
+std::vector<MyRect> detectObjects(ImageData* image, MySize minSize, MySize maxSize,
     myCascade* cascade, float scale_factor, int min_neighbors);
 #endif
 

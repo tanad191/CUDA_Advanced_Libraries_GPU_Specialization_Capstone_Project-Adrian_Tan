@@ -32,7 +32,7 @@ int myAbs(int n);
 int predicate(float eps, MyRect& r1, MyRect& r2);
 
 /* Draws white bounding boxes around detected faces */
-void drawRectangle(MyImage* image, MyRect r);
+void drawResultBox(ImageData* image, MyRect r);
 #ifdef __cplusplus
 } // End of extern "C"
 #endif
@@ -42,7 +42,7 @@ void drawRectangle(MyImage* image, MyRect r);
 
 int partition(std::vector<MyRect>& _vec, std::vector<int>& labels, float eps);
 
-void groupRectangles(std::vector<MyRect>& _vec, int groupThreshold, float eps);
+void groupResults(std::vector<MyRect>& _vec, int groupThreshold, float eps);
 
 #endif
 

@@ -207,7 +207,7 @@ __device__ float evalWeakClassifier_device(const myCascade* d_cascade, int varia
 }
 
 
-__device__ int runCascadeClassifier_device(MyIntImage* d_sum, MyIntImage* d_sqsum,
+__device__ int runCascadeClassifier_device(ImageDimensions* d_sum, ImageDimensions* d_sqsum,
     const myCascade* d_cascade, MyPoint p, int start_stage, float scaleFactor)
 {
     int width = d_cascade->sum.width;
@@ -289,7 +289,7 @@ __device__ int runCascadeClassifier_device(MyIntImage* d_sum, MyIntImage* d_sqsu
 
 // ---------------------------------------------------------------------
 // CUDA kernel: Each thread processes one candidate window.
-__global__ void detectKernel(MyIntImage* d_sum, MyIntImage* d_sqsum,
+__global__ void detectKernel(ImageDimensions* d_sum, ImageDimensions* d_sqsum,
     myCascade* d_cascade, float scaleFactor,
     int x_max, int y_max,
     MyRect* d_candidates, int* d_candidateCount,
@@ -376,7 +376,7 @@ __global__ void detectKernel(MyIntImage* d_sum, MyIntImage* d_sqsum,
 }
 
 // runDetection in cuda_detect.cu
-std::vector<MyRect> runDetection(MyIntImage* h_sum, MyIntImage* h_sqsum,
+std::vector<MyRect> runDetection(ImageDimensions* h_sum, ImageDimensions* h_sqsum,
     myCascade* cascade, int maxCandidates,
     float scaleFactor, int extra_x, int extra_y, int iter_counter)
 {
@@ -384,8 +384,8 @@ std::vector<MyRect> runDetection(MyIntImage* h_sum, MyIntImage* h_sqsum,
 
     // --- Step 1: Allocate Unified Memory for sum integral image ---
     int dataSize = h_sum->width * h_sum->height * sizeof(int);
-    MyIntImage* d_sum = nullptr;
-    CUDA_CHECK(cudaMallocManaged((void**)&d_sum, sizeof(MyIntImage)));
+    ImageDimensions* d_sum = nullptr;
+    CUDA_CHECK(cudaMallocManaged((void**)&d_sum, sizeof(ImageDimensions)));
     CUDA_CHECK(cudaMallocManaged((void**)&(d_sum->data), dataSize));
     CUDA_CHECK(cudaMemcpy(d_sum->data, h_sum->data, dataSize, cudaMemcpyHostToDevice));
     d_sum->width = h_sum->width;
@@ -393,8 +393,8 @@ std::vector<MyRect> runDetection(MyIntImage* h_sum, MyIntImage* h_sqsum,
 
     // --- Step 2: Allocate Unified Memory for squared sum integral image ---
     dataSize = h_sqsum->width * h_sqsum->height * sizeof(int);
-    MyIntImage* d_sqsum = nullptr;
-    CUDA_CHECK(cudaMallocManaged((void**)&d_sqsum, sizeof(MyIntImage)));
+    ImageDimensions* d_sqsum = nullptr;
+    CUDA_CHECK(cudaMallocManaged((void**)&d_sqsum, sizeof(ImageDimensions)));
     CUDA_CHECK(cudaMallocManaged((void**)&(d_sqsum->data), dataSize));
     CUDA_CHECK(cudaMemcpy(d_sqsum->data, h_sqsum->data, dataSize, cudaMemcpyHostToDevice));
     d_sqsum->width = h_sqsum->width;

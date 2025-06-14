@@ -38,7 +38,7 @@ int predicate(float eps, MyRect& r1, MyRect& r2)
     myAbs(r1.y + r1.height - r2.y - r2.height) <= delta;
 }
 
-void groupRectangles(std::vector<MyRect>& rectList, int groupThreshold, float eps)
+void groupResults(std::vector<MyRect>& rectList, int groupThreshold, float eps)
 {
   if( groupThreshold <= 0 || rectList.empty() )
     return;
@@ -207,7 +207,7 @@ int partition(std::vector<MyRect>& _vec, std::vector<int>& labels, float eps)
 
 
 /* draw white bounding boxes around detected faces */
-void drawRectangle(MyImage* image, MyRect r)
+void drawResultBox(ImageData *image, MyRect r)
 {
 	int i;
 	int col = image->width;
