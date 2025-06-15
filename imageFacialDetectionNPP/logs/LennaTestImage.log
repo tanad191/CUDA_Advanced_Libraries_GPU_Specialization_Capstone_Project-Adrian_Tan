@@ -1,0 +1,1191 @@
+PGM file generated: test_image.pgm
+Reading image file: <test_image.pgm>
+Image loaded: 4x4
+imageSpatialFilterNPP running facial detection on input file: <./LennaTestImage.pgm>
+Entering main function...
+Found 1CUDA device(s).
+Reading image file: <./LennaTestImage.pgm>
+Image <./LennaTestImage.pgm> loaded successfully. Dimensions:512x512
+[DEBUG] Sum images loaded successfully.
+Summed image dimensions: 512 x 512
+Square summed image dimensions: 512 x 512
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 512
+[DEBUG] Source height: 512
+[DEBUG] Source data: 0x64b61afbdb90
+[DEBUG] Square source data: 0x64b61b0bdba0
+[DEBUG] Integral images loaded successfully.
+Summed image dimensions: 512 x 512
+Square summed image dimensions: 512 x 512
+Loading cascade classifier...
+Reading text classifier...
+[DEBUG] Successfully opened info.txt.
+[DEBUG] Successfully opened info.txt.
+[DEBUG] Reading stages array from info.txt.
+[DEBUG] Stage 0 filters: 9
+[DEBUG] Stage 1 filters: 16
+[DEBUG] Stage 2 filters: 27
+[DEBUG] Stage 3 filters: 32
+[DEBUG] Stage 4 filters: 52
+[DEBUG] Stage 5 filters: 53
+[DEBUG] Stage 6 filters: 62
+[DEBUG] Stage 7 filters: 72
+[DEBUG] Stage 8 filters: 83
+[DEBUG] Stage 9 filters: 91
+[DEBUG] Stage 10 filters: 99
+[DEBUG] Stage 11 filters: 115
+[DEBUG] Stage 12 filters: 127
+[DEBUG] Stage 13 filters: 135
+[DEBUG] Stage 14 filters: 136
+[DEBUG] Stage 15 filters: 137
+[DEBUG] Stage 16 filters: 159
+[DEBUG] Stage 17 filters: 155
+[DEBUG] Stage 18 filters: 169
+[DEBUG] Stage 19 filters: 196
+[DEBUG] Stage 20 filters: 197
+[DEBUG] Stage 21 filters: 181
+[DEBUG] Stage 22 filters: 199
+[DEBUG] Stage 23 filters: 211
+[DEBUG] Stage 24 filters: 200
+[DEBUG] Finished reading stages array from info.txt.
+[DEBUG] Finished allocating array structures.
+[DEBUG] Successfully opened file class.txt. Reading classifier parameters...
+Cascade classifier loaded...
+cascade->scaled_rectangles_array is NOT NULL after readTextClassifier: 0x64b61b1dfdf0
+Linking integral images to cascade...
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+Integral images linked to cascade.
+Computed extra offsets: extra_x = 24, extra_y = 24
+Adjusted detection window size: 48 x 48
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 512
+[DEBUG] Source height: 512
+[DEBUG] Source data: 0x64b61b2753c0
+[DEBUG] Square source data: 0x64b61b3753d0
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 426
+[DEBUG] Source height: 426
+[DEBUG] Source data: 0x64b61b2618a0
+[DEBUG] Square source data: 0x64b61b312c40
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 355
+[DEBUG] Source height: 355
+[DEBUG] Source data: 0x64b61b3e3b90
+[DEBUG] Square source data: 0x64b61b2353b0
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 296
+[DEBUG] Source height: 296
+[DEBUG] Source data: 0x64b61b3da580
+[DEBUG] Square source data: 0x64b61b2353b0
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 246
+[DEBUG] Source height: 246
+[DEBUG] Source data: 0x64b61b3c4f30
+[DEBUG] Square source data: 0x64b61b4000d0
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 205
+[DEBUG] Source height: 205
+[DEBUG] Source data: 0x64b61b3c4f30
+[DEBUG] Square source data: 0x64b61b3edfe0
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 171
+[DEBUG] Source height: 171
+[DEBUG] Source data: 0x64b61b3c4f30
+[DEBUG] Square source data: 0x64b61b3e1820
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 142
+[DEBUG] Source height: 142
+[DEBUG] Source data: 0x64b61b3c4f30
+[DEBUG] Square source data: 0x64b61b3d8a50
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 119
+[DEBUG] Source height: 119
+[DEBUG] Source data: 0x64b61b463700
+[DEBUG] Square source data: 0x64b61b3c4f30
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 99
+[DEBUG] Source height: 99
+[DEBUG] Source data: 0x64b61b462600
+[DEBUG] Square source data: 0x64b61b3c4f30
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 82
+[DEBUG] Source height: 82
+[DEBUG] Source data: 0x64b61b4619f0
+[DEBUG] Square source data: 0x64b61b468310
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 68
+[DEBUG] Source height: 68
+[DEBUG] Source data: 0x64b61b45ffa0
+[DEBUG] Square source data: 0x64b61b4647f0
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 57
+[DEBUG] Source height: 57
+[DEBUG] Source data: 0x64b61b45ffa0
+[DEBUG] Square source data: 0x64b61b463270
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 47
+[DEBUG] Source height: 47
+[DEBUG] Source data: 0x64b61b45ffa0
+[DEBUG] Square source data: 0x64b61b462230
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 39
+[DEBUG] Source height: 39
+[DEBUG] Source data: 0x64b61b45ffa0
+[DEBUG] Square source data: 0x64b61b461770
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 33
+[DEBUG] Source height: 33
+[DEBUG] Source data: 0x64b61b4740d0
+[DEBUG] Square source data: 0x64b61b476050
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+[DEBUG] Calculating integral images...
+[DEBUG] Source width: 27
+[DEBUG] Source height: 27
+[DEBUG] Source data: 0x64b61b4776d0
+[DEBUG] Square source data: 0x64b61b4740d0
+[DEBUG] Preparing image structures for cascade classification...
+[DEBUG] Integral image structures assigned to cascade.
+[DEBUG] Filter rectangle dimensions: 24 x 24
+[DEBUG] Calculated window area: 576
+[DEBUG] Calculated reverse window area: 0.00173611
+[DEBUG] Setting integral image corner pointers in cascade... 
+[INFO] Cascade loaded: 25 stages
+[DEBUG] Starting stage loop for cascade classification. Number of stages: 25
+[DEBUG] Stage: 0, number of features: 9
+[DEBUG] Finished stage 0
+[DEBUG] Stage: 1, number of features: 16
+[DEBUG] Finished stage 1
+[DEBUG] Stage: 2, number of features: 27
+[DEBUG] Finished stage 2
+[DEBUG] Stage: 3, number of features: 32
+[DEBUG] Finished stage 3
+[DEBUG] Stage: 4, number of features: 52
+[DEBUG] Finished stage 4
+[DEBUG] Stage: 5, number of features: 53
+[DEBUG] Finished stage 5
+[DEBUG] Stage: 6, number of features: 62
+[DEBUG] Finished stage 6
+[DEBUG] Stage: 7, number of features: 72
+[DEBUG] Finished stage 7
+[DEBUG] Stage: 8, number of features: 83
+[DEBUG] Finished stage 8
+[DEBUG] Stage: 9, number of features: 91
+[DEBUG] Finished stage 9
+[DEBUG] Stage: 10, number of features: 99
+[DEBUG] Finished stage 10
+[DEBUG] Stage: 11, number of features: 115
+[DEBUG] Finished stage 11
+[DEBUG] Stage: 12, number of features: 127
+[DEBUG] Finished stage 12
+[DEBUG] Stage: 13, number of features: 135
+[DEBUG] Finished stage 13
+[DEBUG] Stage: 14, number of features: 136
+[DEBUG] Finished stage 14
+[DEBUG] Stage: 15, number of features: 137
+[DEBUG] Finished stage 15
+[DEBUG] Stage: 16, number of features: 159
+[DEBUG] Finished stage 16
+[DEBUG] Stage: 17, number of features: 155
+[DEBUG] Finished stage 17
+[DEBUG] Stage: 18, number of features: 169
+[DEBUG] Finished stage 18
+[DEBUG] Stage: 19, number of features: 196
+[DEBUG] Finished stage 19
+[DEBUG] Stage: 20, number of features: 197
+[DEBUG] Finished stage 20
+[DEBUG] Stage: 21, number of features: 181
+[DEBUG] Finished stage 21
+[DEBUG] Stage: 22, number of features: 199
+[DEBUG] Finished stage 22
+[DEBUG] Stage: 23, number of features: 211
+[DEBUG] Finished stage 23
+[DEBUG] Stage: 24, number of features: 200
+[DEBUG] Finished stage 24
+CUDA detection found 0 results.
+Time spent on detection: 0.412667190 seconds (412667190 nanoseconds)
+Saving output to: ./output/LennaTestImage_detected.pgm
+Image saved as: ./output/LennaTestImage_detected.pgm
